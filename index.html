@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supra Method</title>
+    <link rel="icon" type="image/gif" href="../../images/7tpSLy5">
+    <style>
+        body, h1, h2, p, ul, li, button {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://wallpapercave.com/uwp/uwp381319.gif') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: color 0.5s ease; /* Smooth color transition */
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+            color: #007acc;
+            transition: color 1s ease; /* Smooth color transition, change every second */
+        }
+
+        header {
+            backdrop-filter: blur(6px);
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin-right: 20px;
+            font-size: 16px;
+            transition: transform 0.3s ease; /* Smooth link animation */
+        }
+
+        nav a:hover {
+            transform: translateY(-3px); /* Move link up on hover */
+        }
+
+        main {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 0;
+            position: relative;
+            transition: background-color 0.5s ease; /* Smooth background transition */
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #007acc;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007acc;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005b9c;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff0000; /* Red color */
+            font-weight: bold;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .video-window {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 200px;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'q') {
+            window.location.href = 'ms-quick-assist:';
+        }
+    });
+</script>
+
+<header>
+    <h1>Supra Method</h1>
+    <nav>
+        <!-- Add navigation links if needed -->
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Limore Method By Supra Method</h2>
+    </section>
+    <section>
+        <h2><a href="https://www.dropbox.com/scl/fi/6mxyzv4mzaost292v6rfh/LimoreSupra.exe?rlkey=6lpaqojtbd7k615bkhu17cfvi&dl=1" target="_blank">Downloads Launcher</a></h2>
+    </section>
+    <section>
+        <h2>Extras Download</h2>
+        <ul>
+            <li><a href="https://www.dropbox.com/404" target="_blank">Roblox Fix Crash</a></li>
+            <li><a href="https://www.dropbox.com/404" target="_blank">Minecraft Bedrock RTX</a></li>
+            <li><a href="https://www.dropbox.com/404" target="_blank">Mine On Limore (Paid Option On Discord)</a></li>
+        </ul>
+    </section>
+</main>
+
+<script>
+    // JavaScript for changing colors with a timer
+    setInterval(function() {
+        let randomColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+        document.body.style.color = randomColor;
+        document.querySelector('h1').style.color = randomColor;
+        document.querySelector('a').style.color = randomColor;
+    }, 1000); // Change colors every second
+
+    // JavaScript for link animation
+    document.querySelectorAll('nav a').forEach(function(link) {
+        link.addEventListener('mouseover', function() {
+            link.style.transform = 'translateY(-3px)';
+        });
+
+        link.addEventListener('mouseout', function() {
+            link.style.transform = 'translateY(0)';
+        });
+    });
+</script>
+
+</body>
+</html>
