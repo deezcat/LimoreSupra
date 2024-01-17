@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supra Method</title>
     <link rel="icon" type="image/gif" href="../../images/7tpSLy5">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Add Font Awesome stylesheet -->
     <style>
         body, h1, h2, p, ul, li, button {
             margin: 0;
@@ -13,7 +14,7 @@
 
         body {
             font-family: Arial, sans-serif;
-            background: url('https://wallpapercave.com/uwp/uwp381319.gif') no-repeat center center fixed;
+            background: url('https://wallpapercave.com/wp/wp2763910.gif') no-repeat center center fixed;
             background-size: cover;
             color: #fff;
             height: 100vh;
@@ -28,7 +29,7 @@
         h1 {
             margin-bottom: 10px;
             font-size: 28px;
-            color: #007acc;
+            color: #fff; /* Change title text color to white */
             transition: color 1s ease; /* Smooth color transition, change every second */
         }
 
@@ -63,12 +64,16 @@
             max-width: 800px;
             width: 100%;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5); /* Add a subtle background color */
+            border-radius: 15px; /* Increase border-radius for rounded corners */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             z-index: 0;
             position: relative;
             transition: background-color 0.5s ease; /* Smooth background transition */
+            backdrop-filter: blur(6px); /* Apply backdrop filter for blur effect */
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards; /* Fade-in animation */
         }
 
         section {
@@ -76,9 +81,21 @@
         }
 
         h2 {
-            color: #007acc;
+            color: #fff; /* Change heading color to white */
             font-size: 24px;
             margin-bottom: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards; /* Fade-in animation */
+        }
+
+        h2 a {
+            text-decoration: underline; /* Always underline the link */
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+
+        h2 a:hover {
+            color: #ffd700; /* Change link color on hover */
         }
 
         ul {
@@ -88,6 +105,9 @@
 
         li {
             margin-bottom: 10px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards; /* Fade-in animation */
         }
 
         button {
@@ -95,7 +115,7 @@
             color: #fff;
             padding: 10px 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 15px; /* Increase border-radius for rounded corners */
             cursor: pointer;
             margin-right: 10px;
             font-size: 16px;
@@ -108,13 +128,23 @@
 
         a {
             text-decoration: none;
-            color: #ff0000; /* Red color */
+            color: #fff; /* Change link color to white */
             font-weight: bold;
             transition: color 0.3s ease; /* Smooth color transition */
         }
 
         a:hover {
             text-decoration: underline;
+        }
+
+        .discord-icon {
+            font-size: 24px;
+            color: #7289da; /* Discord color */
+            margin-top: 10px;
+            cursor: pointer;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s forwards; /* Fade-in animation */
         }
 
         .video-window {
@@ -125,6 +155,13 @@
             height: 200px;
             background-color: #ffffff;
             border: 1px solid #000000;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
@@ -146,41 +183,23 @@
 </header>
 <main>
     <section>
-        <h2>Limore Method By Supra Method</h2>
+        <h2>Limore Method By Supra Method : </h2>
     </section>
     <section>
         <h2><a href="https://www.dropbox.com/scl/fi/6mxyzv4mzaost292v6rfh/LimoreSupra.exe?rlkey=6lpaqojtbd7k615bkhu17cfvi&dl=1" target="_blank">Downloads Launcher</a></h2>
     </section>
     <section>
-        <h2>Extras Download</h2>
+        <h2>Latest Patches :</h2>
         <ul>
-            <li><a href="https://www.dropbox.com/404" target="_blank">Roblox Fix Crash</a></li>
-            <li><a href="https://www.dropbox.com/404" target="_blank">Minecraft Bedrock RTX</a></li>
-            <li><a href="https://www.dropbox.com/404" target="_blank">Mine On Limore (Paid Option On Discord)</a></li>
+            <h1> - Fixed Crash After 10minutes</h1>
+            <h1> - More Patch note on Discord</h1>
         </ul>
     </section>
+
+    <!-- Discord icon, update the link to your Discord server -->
+    <i class="fab fa-discord discord-icon" onclick="window.location.href='https://discord.gg/ARMPqxUnY7'"></i>
 </main>
 
-<script>
-    // JavaScript for changing colors with a timer
-    setInterval(function() {
-        let randomColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-        document.body.style.color = randomColor;
-        document.querySelector('h1').style.color = randomColor;
-        document.querySelector('a').style.color = randomColor;
-    }, 1000); // Change colors every second
-
-    // JavaScript for link animation
-    document.querySelectorAll('nav a').forEach(function(link) {
-        link.addEventListener('mouseover', function() {
-            link.style.transform = 'translateY(-3px)';
-        });
-
-        link.addEventListener('mouseout', function() {
-            link.style.transform = 'translateY(0)';
-        });
-    });
-</script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script> <!-- Add Font Awesome script -->
 </body>
 </html>
